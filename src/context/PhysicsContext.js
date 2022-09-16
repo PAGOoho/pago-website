@@ -28,18 +28,6 @@ export const PhysicsProvider = ({ children }) => {
   const [constraints, setContraints] = useState(null);
   const [scene, setScene] = useState();
   const [loading, setLoading] = useState(true);
-  const [stateTrigger, setStateTrigger] = useState(false);
-  const [canvasBg, setCanvasBg] = useState(CANVAS_BACKGROUND);
-
-  const triggerObject = () => {
-    setStateTrigger(!stateTrigger);
-  };
-
-  const changeCanvasBg = () => {
-    CANVAS_BACKGROUND =
-      CANVAS_BACKGROUND === 'transparent' ? 'white' : 'transparent';
-    setCanvasBg(CANVAS_BACKGROUND);
-  };
 
   const initialConstraints = () => {
     if (!constraints) {
@@ -175,14 +163,10 @@ export const PhysicsProvider = ({ children }) => {
         Bodies,
         World,
         constraints,
-        loading,
-        canvasBg,
-        triggerObject,
         initialConstraints,
         createWorld,
         resizeWorld,
         addBall,
-        changeCanvasBg,
       }}
     >
       {children}
