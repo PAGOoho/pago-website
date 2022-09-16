@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'brush';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/GoodBrush.woff') format('woff');
+}
+
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body {
+  background: #222;
+  margin: 0;
+  overflow: hidden;
+  touch-action: none;
+}
+
+.activeLink {
+  font-size: 26px;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
