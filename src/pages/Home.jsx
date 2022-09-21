@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 
-import Logo from '../layout/Logo';
+import Logo from '../components/Logo';
 import PhysicsObjects from '../components/PhysicsObjects';
 import '../layout/styles/home.scss';
 import ContactData from '../components/ContactData';
@@ -15,9 +15,10 @@ function Home() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 0.2 }}
+      transition={{ duration: 0.4 }}
       className="homeWrap"
       onClick={addBall}
+      onTouchStart={addBall}
     >
       <div className="overlay">
         <Logo />

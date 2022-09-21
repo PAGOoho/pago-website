@@ -12,6 +12,7 @@ const PARTICLE_BOUNCYNESS = 0.1;
 const PARTICLE_DENSITY = 0.2;
 const PARTICLE_QUANTITY_MIN = 2;
 const PARTICLE_QUANTITY_MAX = 4;
+const FOOTER_HEIGHT = 30;
 let CANVAS_BACKGROUND = 'transparent';
 
 export const PhysicsProvider = ({ children }) => {
@@ -34,7 +35,7 @@ export const PhysicsProvider = ({ children }) => {
       // Set Constraints initially after render to make sure the button is included
       setContraints({
         width: window.innerWidth,
-        height: window.innerHeight,
+        height: window.innerHeight - FOOTER_HEIGHT,
       });
     }
   };
@@ -117,7 +118,7 @@ export const PhysicsProvider = ({ children }) => {
           setLoading(true);
           setContraints({
             width: window.innerWidth,
-            height: window.innerHeight,
+            height: window.innerHeight - FOOTER_HEIGHT,
           });
         }, 50);
       }

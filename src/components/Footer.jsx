@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import '../layout/styles/footer.scss';
 
 function Footer() {
   const footerYear = new Date().getFullYear();
@@ -8,7 +9,7 @@ function Footer() {
       <NavLink
         to="/"
         className={({ isActive }) =>
-          'nav-link' + (isActive ? ' activeLink' : '')
+          'nav-link noselect' + (isActive ? ' activeNav' : '')
         }
       >
         Home
@@ -16,13 +17,15 @@ function Footer() {
       <NavLink
         to="/About"
         className={({ isActive }) =>
-          'nav-link' + (isActive ? ' activeLink' : '')
+          'nav-link noselect' + (isActive ? ' activeNav' : '')
         }
       >
-        About/Impress
+        About
       </NavLink>
       <div>
-        <p>Copyright &copy; {footerYear} All rights reserved.</p>
+        <p className="noselect">
+          &copy; {footerYear} PAGO - Web Development. All rights reserved.
+        </p>
       </div>
     </footer>
   );

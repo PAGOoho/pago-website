@@ -1,0 +1,42 @@
+.about {
+  color: #eee;
+  padding: 2%;
+  font-family: Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 30px);
+
+
+  .aboutwrap {
+    height: 100%;
+    overflow: auto;
+    padding: 8px;
+
+    a {
+      color: #eee;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    a, p {
+      margin: 6px 0;
+    }
+
+    h2, h1 {
+      font-family: 'brush';
+    }
+
+    h1 {
+      font-size: 58px;
+      margin: 0;
+    }
+
+    h2 {
+      margin: 25px 0 6px 0;
+    }
+  }
+}
