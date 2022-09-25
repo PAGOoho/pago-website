@@ -11,7 +11,7 @@ function About() {
         transition={{ duration: 0.4 }}
         className="aboutwrap"
       >
-        <h1>About YOU</h1>
+        <h1>About</h1>
         <h2>Information required according to par. 5 TMG:</h2>
         <p>Patrick Grönboldt - Web Developer</p>
         <p>Buddestraße, 22</p>
