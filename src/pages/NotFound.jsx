@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 function NotFound() {
+  console.log(FaHome);
   return (
     <div className="notfound">
       <motion.div

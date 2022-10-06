@@ -1,4 +1,4 @@
-import logo from '../layout/assets/pago_special_v3.png';
+import logo from '../layout/assets/imgs/pago_special_v3.png';
 
 function Logo() {
   return (

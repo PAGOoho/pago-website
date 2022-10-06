@@ -16,8 +16,11 @@ function About() {
         <p>Patrick Grönboldt - Web Developer</p>
         <p>Buddestraße, 22</p>
         <p>21109 Hamburg</p>
+        <p>Germany</p>
         <h2>Contact:</h2>
-        <a href="mailto:hi@pago.codes">E-Mail: hi@pago.codes</a>
+        <p>
+          E-Mail: <a href="mailto:hi@pago.codes">hi@pago.codes</a>
+        </p>
         <h2>VAT Number according to par. 27a UStG:</h2>
         <p>[Umsatzsteueridentifikationsnummer]</p>
         <h2>Register Entry:</h2>

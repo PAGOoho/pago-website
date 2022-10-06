@@ -1,6 +1,12 @@
 import { createContext, useState } from 'react';
 import Matter from 'matter-js';
 
+/* In case of using sprites
+import htmlSprite from '../layout/assets/imgs/particle_html5.png';
+import cssSprite from '../layout/assets/imgs/particle_css3.png';
+import jsSprite from '../layout/assets/imgs/particle_js.png';
+*/
+
 const PhysicsContext = createContext();
 
 // Global Values
@@ -141,7 +147,11 @@ export const PhysicsProvider = ({ children }) => {
             PARTICLE_SIZE_MIN
         );
         const randomDegree = Math.floor(Math.random() * 360);
-        //const randomGrey = String(Math.floor(Math.random() * (9 - 5 + 1) + 5));
+
+        /* In case of using sprites
+        const spriteArray = [htmlSprite, cssSprite, jsSprite];
+        const randomSprite = spriteArray[Math.floor(Math.random() * (spriteArray.length + 1))];
+        */
 
         World.add(
           scene.engine.world,
