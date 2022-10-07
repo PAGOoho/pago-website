@@ -1,10 +1,5 @@
 import { useState } from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Footer from './components/Footer';
 
@@ -28,8 +23,7 @@ function App() {
       ) : (
         <Router>
           <Routes>
-            <Route path="/" element={<Navigate to="/home" />} />
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/notfound" element={<NotFound />} />
             <Route path="/*" element={<NotFound />} />
