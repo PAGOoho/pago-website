@@ -7,17 +7,17 @@ function Footer() {
   return (
     <footer>
       <NavLink
-        to="/"
+        to="/home"
         className={({ isActive }) =>
-          'nav-link noselect' + (isActive ? ' activeNav' : '')
+          'nav-link noselect' + (isActive ? ' activeNav' : undefined)
         }
       >
         Home
       </NavLink>
       <NavLink
-        to="/About"
+        to="/about"
         className={({ isActive }) =>
-          'nav-link noselect' + (isActive ? ' activeNav' : '')
+          'nav-link noselect' + (isActive ? ' activeNav' : undefined)
         }
       >
         About

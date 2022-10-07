@@ -23,12 +23,12 @@ let CANVAS_BACKGROUND = 'transparent';
 
 export const PhysicsProvider = ({ children }) => {
   // Mattter variables
+  const Runner = Matter.Runner;
   const Engine = Matter.Engine;
   const Render = Matter.Render;
   const World = Matter.World;
   const Bodies = Matter.Bodies;
   const Body = Matter.Body;
-  const Mouse = Matter.Mouse;
   const MouseConstraint = Matter.MouseConstraint;
 
   // States
@@ -92,10 +92,8 @@ export const PhysicsProvider = ({ children }) => {
         { x: 0, y: height + STATIC_DENSITY },
       ]);
 
-      let mouse = Mouse.create(canvas);
-      mouse.pixelRatio = window.devicePixelRatio;
-
       const mConstraint = MouseConstraint.create(engine, {
+        element: canvas,
         constraint: {
           render: {
             visible: false,
@@ -105,7 +103,7 @@ export const PhysicsProvider = ({ children }) => {
 
       World.add(engine.world, mConstraint);
 
-      Engine.run(engine);
+      Runner.run(engine);
       Render.run(render);
 
       setScene(render); // Use state to have render gloabal
