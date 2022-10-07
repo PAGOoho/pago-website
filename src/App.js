@@ -28,7 +28,7 @@ function App() {
       ) : (
         <Router>
           <Routes>
-            <Route path="/" element={<Navigate to="/home" replace />} />
+            <Route path="/" element={<Navigate to="/home" />} />
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/notfound" element={<NotFound />} />
