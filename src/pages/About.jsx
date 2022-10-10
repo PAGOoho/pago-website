@@ -2,6 +2,20 @@ import '../layout/styles/about.scss';
 
 import { motion } from 'framer-motion';
 
+/*
+<h2>VAT Number according to par. 27a UStG:</h2>
+        <p>[Umsatzsteueridentifikationsnummer]</p>
+        <h2>Register Entry:</h2>
+        <p>Entry in the commercial register</p>
+        <p>Registergericht: [Registergericht]</p>
+        <p>Registernummer: [Registernummer]</p>
+        <h2>Regulatory Authority:</h2>
+        <p>[Aufsichtsbehörde]</p>
+        <p>Legal Occupational Title: Web Developer</p>
+        <p>Appropriate Panel Chamber: Chamber of Commerce</p>
+        <p>Validated by: Germany</p>
+*/
+
 function About() {
   return (
     <div className="about">
@@ -21,17 +35,6 @@ function About() {
         <p>
           E-Mail: <a href="mailto:hi@pago.codes">hi@pago.codes</a>
         </p>
-        <h2>VAT Number according to par. 27a UStG:</h2>
-        <p>[Umsatzsteueridentifikationsnummer]</p>
-        <h2>Register Entry:</h2>
-        <p>Entry in the commercial register</p>
-        <p>Registergericht: [Registergericht]</p>
-        <p>Registernummer: [Registernummer]</p>
-        <h2>Regulatory Authority:</h2>
-        <p>[Aufsichtsbehörde]</p>
-        <p>Legal Occupational Title: Web Developer</p>
-        <p>Appropriate Panel Chamber: Chamber of Commerce</p>
-        <p>Validated by: Germany</p>
       </motion.div>
     </div>
   );
