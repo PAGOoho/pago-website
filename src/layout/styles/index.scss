@@ -32,10 +32,10 @@ body {
   height: 100vh;
   display: flex;
   flex-flow: column wrap;
-}
 
-.home,
-.about,
-.notfound {
-  flex: 1 0 auto;
+  .home,
+  .about,
+  .notfound {
+    flex: 1 0 auto;
+  }
 }

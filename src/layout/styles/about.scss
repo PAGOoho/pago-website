@@ -1,14 +1,15 @@
 /* ABOUT AND NOT FOUND PAGE */
-.about, .notfound {
+.about,
+.notfound {
   color: #eee;
   padding: 2%;
   font-family: Helvetica, Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 30px);
 
-  .aboutwrap, .notfoundwrap {
+  .aboutwrap,
+  .notfoundwrap {
     overflow: auto;
     padding: 8px;
 
@@ -21,11 +22,13 @@
       }
     }
 
-    a, p {
+    a,
+    p {
       margin: 6px 0;
     }
 
-    h2, h1 {
+    h2,
+    h1 {
       font-family: 'brush';
     }
 
