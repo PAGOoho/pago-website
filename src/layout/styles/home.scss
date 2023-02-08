@@ -1,13 +1,12 @@
-.homeWrap {
+.home {
   width: 100vw;
-  min-height: calc(100vh - 30px);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 canvas {
-  transition:all 0.2s;
+  transition: all 0.2s;
 }
 
 .btnwrap {
